@@ -1,0 +1,192 @@
+.header
+	position: relative
+	margin-bottom: 30px
+	padding-bottom: 160px
+	min-height: 100vh
+	background: url(../img/bg-main.png) no-repeat top center
+	background-size: cover
+
+.top-line
+	position: relative
+	margin-bottom: 106px
+	padding: 11px 0 33px
+	background-color: rgba(#ccc, .6)
+	border-bottom: 60px solid $accent
+	&:before
+		position: absolute
+		content: ''
+		width: 320px
+		height: 80px
+		bottom: -80px
+		left: 50%
+		margin-left: -180px
+		background: url(../img/triangles.png) no-repeat center
+		background-size: cover
+	&__row
+		display: flex
+		align-items: center
+	&__logo
+		width: 100%
+		text-align: center
+	&__contacts
+		text-align: right
+	&__contact
+		position: relative
+		display: inline-block
+		color: $text
+		&:before
+			position: absolute
+			content: ''
+			width: 100%
+			height: 2px
+			bottom: 0
+			right: 0
+			background-color: $accent
+			transform: translateY(1px) translateX(100%) scale(0)
+			transition: all .5s
+		&:hover
+			text-decoration: none
+			color: $text
+			&:before
+				transform: translateY(1px) translateX(0) scale(1)
+.form
+	position: relative
+	&__row
+		align-items: center
+	&__col
+		padding: 0 5px
+	&__legend
+		margin-bottom: 0
+		&_top
+			font-size: 16px
+			line-height: 1.2
+	&__input
+		width: 100%
+		border-radius: 5px
+		border: 1px solid $accent
+		background-color: #fff
+		&_top
+			padding: 7px 0 7px 30px
+			font-size: 12px
+			&::placeholder
+				font-size: 12px
+		&_block
+			position: relative
+			&:before
+				position: absolute
+				font-family: fa
+			&_top
+				&:before
+					left: 9px
+					top: 8px
+					font-size: 12px
+		&_name
+			&:before
+				content: '\f007'
+		&_phone
+			&:before
+				content: '\f095'
+	&__button
+		font-family: myriad
+		border-radius: 5px
+		border: 1px solid $accent
+		background-color: #ffffff
+		background-image: linear-gradient(-3deg, #ff9500 0%, #ffff00 100%)
+		cursor: pointer
+		&:hover
+			background-image: linear-gradient(-3deg, #ff9500 20%, #ffff00 80%)
+		&_top
+			padding: 6px 35px 4px
+			font-size: 14px
+			font-weight: 700
+.hero
+	&__content
+		position: relative
+		margin-top: 46px
+	&__title
+		padding: 20px 0 20px 20px
+		margin-bottom: 0
+		background: rgba(#000, .73)
+		font-size: 71px
+		font-weight: bold
+		line-height: 62px
+		color: $accent
+		text-transform: uppercase
+	&__term
+		margin-bottom: 55px
+		margin-right: 58px
+		padding: 16px 20px 16px 20px
+		font-size: 34px
+		line-height: 40.66px
+		background: rgba(#fff, .73)
+	&__description
+		position: relative
+		margin-bottom: 0
+		margin-left: 58px
+		padding: 8px 20px
+		text-align: center
+		font-size: 24px
+		color: #fff
+		background: rgba(#000, .73)
+		&:before
+			position: absolute
+			content: ''
+			width: 170px
+			height: 110px
+			bottom: -60px
+			right: -95px
+			background: url(../img/hero-arrow.png) no-repeat center
+			background-size: cover
+			z-index: 1
+.form
+	&_main
+		background: rgba(#000, .73)
+	&_hero
+		margin-left: 35px
+		padding: 45px 30px 80px
+	&__legend
+		&_main
+			font-size: 22px
+			font-weight: 700
+			line-height: 33px
+			text-transform: uppercase
+			color: #ffffff
+			text-align: center
+		&_accent
+			color: $accent
+		&_hero
+			margin-bottom: 50px
+	&__input_main
+		padding: 10px 10px 10px 58px
+		margin-bottom: 20px
+		font-size: 22px
+	&__input_block_main
+		&:before
+			left: 17px
+			top: 7px
+			font-size: 26px
+	&__button_main
+		margin-top: 20px
+		padding: 5px 0
+		width: 100%
+		font-size: 28px
+
+	&__success
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		text-transform: uppercase
+		font-weight: bold
+		color: $accent
+		z-index: 10
+		display: none
+		& ~ *
+			transition: all .5s ease
+		&.active
+			& ~ *
+				opacity: .5
+				filter: blur(10px) 
+.success__text
+	margin: auto

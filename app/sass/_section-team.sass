@@ -1,0 +1,52 @@
+.team 
+	padding: 20px 0 100px
+	background-color: #fff
+	&__title
+		margin-bottom: 50px
+		background: url(../img/profit-title_bg.png) no-repeat center
+		background-size: contain
+	&__slider
+		&.owl-carousel .owl-nav button
+			outline: none
+			position: absolute
+			bottom: 0
+			opacity: .7
+			transition: all .3s
+			&:hover
+				opacity: 1
+			&.disabled
+				opacity: .3
+			&.owl
+				&-prev
+					left: 0
+				&-next
+					left: 70px
+		.fas
+			font-family: fa 
+			font-size: 32px
+			font-weight: 400
+			text-align: center
+			color: $accent
+	.owl-dots
+		margin-top: 20px
+		display: flex
+		justify-content: space-around
+	.owl-carousel button.owl-dot
+		height: 16px
+		width: 16px
+		background: $accent
+		outline: none
+		border-radius: 50%
+		border: 3px solid $accent
+		&.active
+			background: #000
+			border: 5px solid $accent
+	
+.member
+	&__name
+		font-size: 28px
+	&__position
+		font-size: 18px
+		font-weight: bold
+	&__info
+		font-size: 18px

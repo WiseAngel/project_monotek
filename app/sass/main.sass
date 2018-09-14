@@ -1,0 +1,90 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #6b4d43
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	color: $text
+	overflow-x: hidden
+	background-color: $main-bg
+	input, textarea
+			border: #666 1px solid
+			outline: none
+			&:focus:required:invalid
+				border-color: red
+			&:required:valid
+				border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+				
+@import "header"
+@import "section-profitable"
+@import "section-achievements"
+@import "section-guarantees"
+@import "section-form"
+@import "section-works"
+@import "section-price"
+@import "section-team"
+@import "section-partners"
+@import "section-certificate"
+@import "section-map"
+@import "footer"
+@import "section-hidden"
+@import "media"
+/*----MS Ie10 IE11 Browser CSS Start----*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+	input
+		line-height: 1
+	.form 
+		&__button
+			&_top
+				padding: 4px 30px 4px
+	.form__input_block
+		&_top:before
+			top: 6px
+		&_main:before
+			top: 4px
+	.section_services, .achievements__content
+		flex: 1 0 auto
+	.partners__logo
+		flex: 1
+	.logo__ge
+		padding: 65px 70px
+		
+/*----MS Ie10 IE11 Browser CSS End----*/
+/*----MS Edge Browser CSS Start----*/
+@supports (-ms-ime-align: auto)
+	input
+		line-height: 1
+	.form 
+		&__button
+			&_top
+				padding: 4px 30px 4px
+	.form__input_block
+		&_top:before
+			top: 6px
+		&_main:before
+			top: 4px
+/*----MS Edge Browser CSS End----*/
+// @media screen and ( -webkit-min-device-pixel-ratio : 0 )

@@ -1,0 +1,125 @@
+.footer 
+	overflow: hidden
+	&__logo
+		display: flex
+		height: 100%
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	&__img
+		width: 100%
+	&__contacts
+		text-align: center
+	&__phone
+		color: #ffffff
+		font-size: 23px
+		font-weight: 400
+		line-height: 50px
+		text-transform: uppercase
+		letter-spacing: -1.16px
+		transition: all .3s
+		&:hover
+			text-decoration: none
+			color: $accent
+	&__addres
+		position: relative
+		padding-left: 30px
+		font-size: 21px
+		font-weight: 400
+		letter-spacing: -1.16px
+		&:before
+			position: absolute
+			content: '\f015'
+			font-family: fa 
+			font-size: 21px
+			left: 0
+	&__email
+		position: relative
+		padding-left: 30px
+		font-size: 22px
+		color: $text
+		font-weight: 400
+		letter-spacing: -1.16px
+		&:before
+			position: absolute
+			content: '\f0e0'
+			font-family: fa 
+			font-size: 22px
+			left: 0
+			line-height: 1.8
+			color: $text
+		&:hover
+			text-decoration: none
+			color: $text
+	&_accent, &_black
+		position: relative
+		padding: 10px 0
+	&_accent
+		padding-left: 50px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		height: 100%
+	&_black
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			right: -133px
+			height: 100%
+			border: 71px solid transparent
+			border-left: 47px solid rgba($text, .6)
+			z-index: 1
+		&:after
+			position: absolute
+			content: ''
+			top: 50%
+			right: -115px
+			height: 80%
+			border: 62px solid transparent
+			border-left: 42px solid $text
+			z-index: 1
+			transform: translateY(-50%)
+	&__col
+		&_black
+			position: relative
+			background-color: $text
+			&:before
+				position: absolute
+				content: ''
+				width: 100vw
+				height: 100%
+				background-color: $text
+				top: 0
+				left: -99.9vw
+		&_accent
+			position: relative
+			background-color: $accent
+			&:before
+				position: absolute
+				content: ''
+				width: 100vw
+				height: 100%
+				background-color: $accent
+				top: 0
+				right: -99.9vw
+	&__button
+		display: inline-block
+		padding: 6px 42px 4px
+		color: $text
+		&:hover
+			text-decoration: none
+			color: $text
+.social__link
+	margin: 5px
+	padding: 5px
+	color: $accent
+	font-size: 23px
+	font-weight: 400
+	transition: all .3s
+	&:hover
+		text-decoration: none
+		color: #fff
+	.fab
+		font-family: fa
+

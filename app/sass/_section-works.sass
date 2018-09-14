@@ -1,0 +1,133 @@
+.works
+	padding: 20px 0 100px
+	&__title
+		background: url(../img/profit-title_bg.png) no-repeat center
+		background-size: contain
+	&__slider
+		position: relative
+
+.slide
+	&__title
+		margin-top: 0
+		margin-bottom: 20px
+		font-size: 36px
+		font-weight: 700
+		text-transform: uppercase
+		letter-spacing: 0.9px
+		text-align: center
+		line-height: 1.1
+	&__photo
+		width: 100%
+		height: 100%
+	&__img
+		&_thumb
+			width: 100%
+			height: 100%
+	&__description
+		position: relative
+		padding: 50px 0 50px 40px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 100%
+		background-color: #ffb300
+		&:before
+			position: absolute
+			content: ''
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			background: url(../img/slider__bg.png) no-repeat center
+			background-size: cover
+			opacity: .2
+		&_key
+			font-size: 28px
+			letter-spacing: 0.7px
+		&_value
+			font-size: 28px
+			font-weight: bold
+			letter-spacing: 0.7px
+	&__col
+		&_photo
+			padding-right: 0
+		&_desc
+			padding-left: 0
+	&__video
+		margin-top: 70px
+
+.video
+	&__title
+		margin-bottom: 35px
+		font-size: 24px
+		font-weight: 700
+		letter-spacing: 0.6px
+		text-align: center
+	&__iframe
+		width: 100%
+		height: 400px
+		border: none
+
+.works__slider
+	&.owl-carousel .owl-nav button
+		outline: none
+		position: absolute
+		top: 50%
+		margin-top: -26px
+		opacity: .7
+		transition: all .3s
+		&:hover
+			opacity: 1
+		&.disabled
+			opacity: .3
+		&.owl
+			&-prev
+				left: 0
+			&-next
+				right: 0
+	.fas
+		font-family: fa 
+		font-size: 22px
+		line-height: 52px
+		font-weight: 400
+		letter-spacing: 0.8px
+		text-align: center
+		width: 52px
+		height: 52px
+		background-color: $accent
+		border-radius: 50%
+.owl-dots
+	margin-top: 20px
+	display: flex
+	justify-content: space-around
+.owl-carousel button.owl-dot
+	height: 16px
+	width: 16px
+	background: $accent
+	outline: none
+	border-radius: 50%
+	border: 3px solid $accent
+	&.active
+		background: #000
+		border: 5px solid $accent
+
+.slick
+	&-arrow
+		width: 30px
+		height: 30px
+	&-next
+		right: 0
+		z-index: 1
+		&:before
+			font-family: fa
+			content: '\f105'
+			color: $accent
+	&-prev
+		left: 0
+		z-index: 1
+		&:before
+			font-family: fa
+			content: '\f104'
+			color: $accent
+.slick-slider .slick-list, .slick-track
+	height: 100%

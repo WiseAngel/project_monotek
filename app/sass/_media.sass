@@ -1,0 +1,588 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+	.top-line
+		margin-bottom: 50px
+		&__contacts
+			text-align: center
+	
+	.form
+		&_hero
+			margin-left: 0
+			padding: 30px 30px 50px
+		&__button_top
+			width: 100%
+		&__col
+			padding: 0 15px
+		&__input_top
+			margin-bottom: 5px
+		&__legend_main
+			font-size: 26px
+
+	.hero
+		&__title
+			font-size: 60px
+		&__term
+			font-size: 27px
+		&__description
+			font-size: 19px
+			&:before
+				bottom: -50px
+				right: -70px
+				transform: rotate(9deg)
+				width: 140px
+				height: 90px
+	.achievements
+		&__block
+			padding: 0 48px 0 30px
+
+
+	.services
+		&__img_block
+			width: 140px
+			height: 140px
+		&__title
+			font-size: 18px
+		&__description
+			font-size: 14px
+
+	.guarantees
+		&__description
+			padding-left: 0
+			&_heading
+				font-size: 30px
+			&_content
+				font-size: 21px
+
+	.section-form
+		&__title
+			font-size: 36px
+		&__description
+			font-size: 21px
+
+	.slide
+		&__description
+			padding: 30px 0 30px 30px
+			justify-content: space-around
+			&_key
+				font-size: 24px
+			&_value
+				font-size: 24px
+	.works
+		padding: 20px 0 80px
+		&__slider
+			.fas 
+				width: 46px
+				height: 46px
+				line-height: 46px
+				font-size: 24px
+
+	.partners
+		padding: 20px 0 40px
+		&__logo
+			margin-bottom: 20px
+
+	.footer 
+		&__phone
+			line-height: 1.7
+			font-size: 20px
+		&_black
+			&:before 
+				right: -115px
+				border: 61px solid transparent
+				border-left: 40px solid rgba(35,35,35,.6)
+			&:after
+				right: -84px
+				height: 70%
+				border: 42px solid transparent
+				border-left: 27px solid #232323
+		&_accent 
+			padding-left: 40px
+		&__addres, &__email
+			font-size: 18px
+			padding-left: 25px
+			&:before
+				font-size: 18px
+	
+	.social__link
+		line-height: 1.7
+		font-size: 20px
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+	.top-line
+		border-bottom: 40px solid $accent
+		&:before
+			margin-left: -120px
+			width: 240px
+			height: 60px
+			bottom: -60px
+
+	.hero
+		&__content
+			margin-top: 20px
+		&__title
+			padding: 20px
+			font-size: 45px
+		&__term
+			font-size: 26px
+		&__description
+			margin-left: 0
+			margin-right: 50px
+			&:before
+				width: 120px
+				height: 75px
+				bottom: 44px
+				right: -75px
+				transform: rotate(-60deg)
+
+	.form
+		&__legend_main
+			font-size: 30px
+		&__legend_top
+			display: none
+		&__contact
+			font-size: 18px
+
+	.profitable
+		margin-bottom: 0
+		&__description
+			font-size: 16px
+	
+	.section__title
+		font-size: 34px
+	
+	.services
+		&__title
+			font-size: 18px
+		&__description_profit
+			font-size: 14px
+		&__img_block
+			width: 130px
+			height: 130px
+		&__block_guarantee
+			margin-bottom: 20px
+
+	.achievements
+		&__block
+			padding: 0 0 0 30px
+		&__index
+			font-size: 80px
+		&__description
+			font-size: 18px
+
+	.guarantees
+		&__services
+			margin-bottom: 60px
+		&__description
+			padding-left: 80px
+
+	.section-form
+		&__content
+			padding: 35px 0
+		&__title
+			font-size: 30px
+		&__description
+			font-size: 20px
+	
+	.works
+		padding: 20px 0 60px
+		&__slider
+			.fas 
+				width: 40px
+				height: 40px
+				line-height: 40px
+				font-size: 22px
+	.slide
+		&__title
+			font-size: 26px
+			margin-bottom: 10px
+		&__description
+			padding: 10px 0 10px 10px
+			justify-content: space-around
+			&_key
+				font-size: 22px
+				line-height: 1.1
+			&_value
+				font-size: 22px
+				line-height: 1.1
+		&__video
+			margin-top: 50px
+	.video
+		&__iframe
+			height: 250px
+		&__title
+			margin-bottom: 24px
+
+	.thead
+		&__cell
+			&_first, &_second
+				font-size: 24px
+			&_header
+				padding: 30px
+				font-size: 24px
+				letter-spacing: -1px
+			&_price
+				font-size: 46px
+	.tbody
+		&__cell
+			font-size: 14px
+
+	.team 
+		&__slide
+			padding-bottom: 30px
+	.member
+		&__name
+			font-size: 23px
+		&__position
+			font-size: 17px
+		&__info
+			font-size: 16px
+	.footer
+		&__phone
+			font-size: 18px
+		&__button
+			padding: 6px 0 4px
+		&_black
+			&:before
+				right: -110px
+				border: 57px solid transparent
+				border-left: 38px solid rgba($text, .6)
+			&:after
+				right: -83px
+				border: 41px solid transparent
+				border-left: 27px solid $text
+	.social__link
+		margin: 3px
+		padding: 4px
+		font-size: 18px
+
+//Small: ≥576px
++media-breakpoint-down(sm)
+	.hero
+		&__description
+			font-size: 18px
+			&:before
+				width: 110px
+				height: 70px
+				bottom: 50px
+				right: -73px
+				transform: rotate(-53deg)
+	
+	.top-line
+		padding: 15px 0 15px
+		&__form
+			margin-bottom: 20px
+			margin-top: 20px
+		&__contacts
+			display: flex
+			justify-content: space-around
+
+	.form 
+		&__legend_main
+			font-size: 28px
+
+	.achievements
+		&__block
+			padding: 0 0 0 10px
+			&:before
+				width: 4px
+		&__index
+			font-size: 72px
+		&__description
+			font-size: 16px
+			letter-spacing: 0
+
+	.services
+		&__img_block
+			width: 120px
+			height: 120px
+
+	.guarantees
+		&__description
+			padding-left: 0
+			&_heading
+				font-size: 24px
+			&_content
+				font-size: 17.8px
+			&_bg:before
+				height: 415px
+		&__title
+			margin-top: 65px
+
+	.section-form
+		&__content
+			padding: 25px 0
+		&__title
+			font-size: 24px
+		&__description
+			font-size: 18px
+	
+	.works
+		padding: 20px 0 40px
+		&__slider.owl-carousel .owl-nav button
+			top: 70%
+	.slide
+		&__col
+			&_photo
+				padding-right: 15px
+			&_desc
+				padding-left: 15px
+		&__description
+			text-align: center
+			padding: 20px 0
+
+	.thead
+		&__cell
+			&_header
+				padding: 30px 20px
+				font-size: 19px
+				line-height: 1.2
+			&_first, &_second
+				font-size: 20px
+			&_fourth, &_third
+				&_price
+					line-height: 1
+			&_price 
+				font-size: 34px
+	.tbody
+		&__cell
+			font-size: 12px
+	
+	.cell
+		&_capital, &_elite
+			display: table-cell
+	
+	.team
+		padding-bottom: 10px
+		&__slider
+			padding-top: 40px
+			&.owl-carousel .owl-nav button
+				top: 0
+				bottom: auto
+				&.owl
+					&-prev
+						right: 70px
+						left: auto
+					&-next
+						right: 0
+						left: auto
+
+	.owl-carousel .owl-item img.member__photo
+		margin: 0 auto
+		width: 65%
+
+	.certificate 
+		&__img
+			&_thumb
+				margin-bottom: 20px
+	
+	.footer
+		&_black
+			&:before, &:after
+				display: none
+		&_accent
+			padding-left: 0
+		&__col
+			&_black
+				&:after
+					position: absolute
+					content: ''
+					width: 100vw
+					height: 100%
+					background-color: $text
+					top: 0
+					right: -99.9vw
+			&_accent
+				&:after
+					position: absolute
+					content: ''
+					width: 100vw
+					height: 100%
+					background-color: $accent
+					top: 0
+					left: -99.9vw
+			
+
+@media (max-width: 410px)
+	.top-line
+		&__contacts
+			flex-direction: column
+		&__contact
+			&:nth-of-type(1)
+				margin-bottom: 10px
+
+//Extra small: >0
++media-breakpoint-down(xs)
+	.top-line
+		margin-bottom: 25px
+		&__logo
+			display: block
+			width: auto
+			margin: 0 auto
+	
+	.hero
+		&__title
+			padding: 10px
+			font-size: 32px
+		&__term
+			padding: 10px
+			margin-right: 20px
+			margin-bottom: 35px
+			font-size: 19px
+			line-height: 1.6
+		&__description
+			padding: 10px
+			&:before
+				width: 75px
+				height: 50px
+				top: -15px
+				right: -48px
+				transform: rotate(-38deg)
+	
+	.form
+		&__input_main
+			font-size: 16px
+		&_hero
+			padding: 20px 10px 40px
+		&__legend_main
+			font-size: 22px
+		&__button_main
+			font-size: 22px
+
+	.profitable
+		&__description
+			padding: 15px
+			font-size: 14px
+
+	.section
+		&__title
+			font-size: 26px
+			margin-bottom: 0
+
+	.services
+		&__img_block
+			width: 100px
+			height: 100px
+		&__description_profit
+			font-size: 13.9px
+		&__img_guarantee
+			height: 69px
+			width: auto
+
+	.achievements
+		&__index
+			font-size: 56px
+
+	.guarantees
+		&__description
+			padding-left: 0
+			&_heading
+				font-size: 20px
+			&_content
+				font-size: 16px
+			&_bg
+				margin-top: 0
+				&:before
+					height: 470px
+		&__title
+			margin-top: 25px
+		&__services
+			margin-bottom: 35px
+
+	.slide
+		&__title
+			font-size: 26px
+		&__description_block:not(:last-child)
+			margin-bottom: 20px
+
+	.thead
+		&__service
+			display: none
+		&__cell
+			&_header
+				padding: 20px 5px
+				font-size: 16px
+			&_price
+				font-size: 28px
+				letter-spacing: 0
+			&_third, &_fourth
+				font-size: 16px
+			&_first, &_second
+				padding: 0
+			&_first
+				display: flex
+				flex-direction: column
+	.table
+		&__col_width
+			width: 50%
+			&_hidden
+				width: 0
+		&__button
+			&_service
+				display: block
+	.cell
+		&_elite, &_hidden_xs
+			display: none
+
+	.member
+		&__name
+			font-size: 18px
+		&__position
+			font-size: 15px
+		&__info
+			font-size: 14px
+
+	.map-objects__title
+		width: 100%
+		padding: 24px 0
+		
+	.footer
+		&__logo
+			margin-bottom: 30px
+		&__img
+			width: auto
+		&__button
+			display: block
+			padding: 6px 50px 4px
+			margin: 5px auto
+			width: auto
+		&__addres, &__email
+			font-size: 15px
+			padding-left: 25px
+			&:before
+				font-size: 16px
+				line-height: 1.5
+		&__addres
+			margin-bottom: 10px
+		&__email
+			&:before
+				line-height: 1.7
+
+	.popup__form
+		width: 90%
+		
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
